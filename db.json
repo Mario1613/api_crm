@@ -1,0 +1,20 @@
+{
+  "clientes": [
+    {
+      "name": "Mario",
+      "business": "Skill informatic",
+      "email": "mariojhaziel04@gmail.com",
+      "cellPhone": "939393",
+      "notes": "",
+      "id": 2
+    },
+    {
+      "name": "name",
+      "business": "business",
+      "email": "email@gmail.com",
+      "cellPhone": "7461",
+      "notes": "nore",
+      "id": 3
+    }
+  ]
+}
