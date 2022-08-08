@@ -29,7 +29,7 @@ const Formulario = ({ client, charging }) => {
       let response;
       if (client.id) {
         //Edit register
-        const url = `http://localhost:4000/clientes/${client.id}`;
+        const url = `https://my-json-server.typicode.com/Mario1613/api_crm/clientes/${client.id}`;
         response = await fetch(url, {
           method: "PUT",
           body: JSON.stringify(valores),
@@ -39,7 +39,8 @@ const Formulario = ({ client, charging }) => {
         });
       } else {
         //New Register
-        const url = "http://localhost:4000/clientes";
+        const url =
+          "https://my-json-server.typicode.com/Mario1613/api_crm/clientes/clientes";
         response = await fetch(url, {
           method: "POST",
           body: JSON.stringify(valores),

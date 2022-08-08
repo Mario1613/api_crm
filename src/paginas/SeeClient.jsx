@@ -9,7 +9,7 @@ const SeeClient = () => {
   useEffect(() => {
     const getClientApi = async () => {
       try {
-        const url = `http://localhost:4000/clientes/${id}`;
+        const url = `https://my-json-server.typicode.com/Mario1613/api_crm/clientes/${id}`;
         const response = await fetch(url);
         const result = await response.json();
         setClient(result);

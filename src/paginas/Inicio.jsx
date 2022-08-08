@@ -9,7 +9,7 @@ const Inicio = () => {
 
     if (confirms) {
       try {
-        const url = `http://localhost:4000/clientes/${id}`;
+        const url = `https://my-json-server.typicode.com/Mario1613/api_crm/clientes/${id}`;
         const response = await fetch(url, {
           method: "DELETE",
         });
@@ -27,10 +27,11 @@ const Inicio = () => {
   useEffect(() => {
     const obtenerClientesApi = async () => {
       try {
-        const url = "http://localhost:4000/clientes";
+        const url =
+          "https://my-json-server.typicode.com/Mario1613/api_crm/clientes";
         const respuesta = await fetch(url);
         const resultado = await respuesta.json();
-        console.log("resultado Api", resultado);
+        // console.log("resultado Api", resultado);
         setClientes(resultado);
       } catch (error) {
         console.log(" error en obtenerClientesApi", error);
@@ -39,7 +40,7 @@ const Inicio = () => {
     obtenerClientesApi();
   }, []);
 
-  console.log("hello");
+  // console.log("hello");
 
   return (
     <>
